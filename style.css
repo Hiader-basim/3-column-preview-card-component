@@ -1,0 +1,120 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan:hsl(179, 100%, 13%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+.contner{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+}
+.contner main{
+    display: flex;
+    width: 60%;
+}@media (max-width:768px){
+    .contner main{
+        flex-direction: column;
+        width: 95%;
+    }
+}
+.contner main .box1{
+    border-radius: 5px 0 0 5px;
+    background-color: var(--Bright-orange);
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    -o-border-radius: 5px 0 0 5px;
+}
+.contner main .box2{
+    background-color: var(--Dark-cyan);
+}
+.contner main .box3{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+}
+@media(max-width:768px){
+    .contner main .box1{
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+    .contner main .box3{
+        border-radius: 0;
+}
+}
+.contner main .cont{
+    padding: 50px;
+}
+.contner main .cont h1{
+    padding: 20px 0;
+    color: aliceblue;
+    font-family: 'Big Shoulders Display',cursive;
+    font-weight: 400;
+    font-size: 40px;
+}
+.contner main .cont p{
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+    font-family: 'Lexend Deca',sans-serif;
+    font-weight: 400;
+}
+.contner main .cont .button{
+    padding: 100px 0 0;
+}
+.contner main .cont .button button{
+    padding: 15px 30px;
+    font-family: 'Lexend Deca',sans-serif;
+    font-weight: 400;
+    border: none;
+    background-color: aliceblue;
+    border-radius: 30px 30px 30px 30px ;
+    -webkit-border-radius: 30px 30px 30px 30px ;
+    -moz-border-radius: 30px 30px 30px 30px ;
+    -ms-border-radius: 30px 30px 30px 30px ;
+    -o-border-radius: 30px 30px 30px 30px ;
+}
+.contner main .box1 button{
+    color: var(--Bright-orange);
+}
+.contner main .box1 button:hover{
+    background-color: var(--Bright-orange);
+    color: white;
+    border: 3px solid white;
+}
+.contner main .box2 button{
+    color: var(--Dark-cyan);
+}
+.contner main .box2 button:hover {
+    background-color: var(--Dark-cyan);
+    color: white;
+    border: 3px solid white;
+}
+.contner main .box3 button{
+    color: var(--Very-dark-cyan);
+}
+.contner main .box3 button:hover {
+    background-color: var(--Very-dark-cyan);
+    color: white;
+    border: 3px solid white;
+}
